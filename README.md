@@ -1,4 +1,4 @@
-# Cordova Android 10 Bug Demonstration
+# cordova-android@10.1.0 Bug Demonstration
 
 The deviceready is not fired on Android when running `cordova-android@10.#.#` with the cordova-plugin-device installed.
 
@@ -26,4 +26,9 @@ git clone https://github.com/codeconsole/cordova-bug
 cd cordova-bug
 cordova prepare
 cordova run android
+```
+
+A workaround for fixing the problem is to add the following preference to config.xml
+```
+<preference name="AndroidInsecureFileModeEnabled" value="true" />
 ```
