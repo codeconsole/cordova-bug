@@ -32,7 +32,7 @@ A workaround for fixing the problem is to add the following preference to config
 ```
 <preference name="AndroidInsecureFileModeEnabled" value="true" />
 ```
-which appears to be related to this:
+which appears to be related to this change:
 https://github.com/apache/cordova-android/pull/1275/files#diff-c2eeba9559f1ec42b3e90bd1531f3389a2aab9d199752d4cca70fbf489d92ca0R88
 
 References:
