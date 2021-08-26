@@ -1,9 +1,13 @@
 # Cordova Android 10 Bug Demonstration
 
+The deviceready is not fired on Android when running `cordova-android@10.#.#` with the cordova-plugin-device installed.
+
 This was created as follows: 
 
 ```
-sudo npm install -g cordova
+# Install the latest version of Cordova
+sudo npm install -g cordova 
+# Create the app
 cordova create cordova-bug 
 cd cordova-bug 
 cordova plugin rm cordova-plugin-whitelist
@@ -15,7 +19,9 @@ cordova run android
 
 Alternatively, you could run this Cordova project:
 ```
-sudo npm install -g cordova
+# Install the latest version of Cordova
+sudo npm install -g cordova # Install the latest version of Cordova
+# Chekout the app
 git clone https://github.com/codeconsole/cordova-bug
 cd cordova-bug
 cordova prepare
